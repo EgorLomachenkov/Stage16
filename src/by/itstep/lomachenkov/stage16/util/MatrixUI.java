@@ -1,7 +1,7 @@
 package by.itstep.lomachenkov.stage16.util;
 
 public class MatrixUI {
-    public static String format(int[][] matrix) {
+    public static String toString(int[][] matrix) {
         return String.format("Matrix:\n%s", convert(matrix));
     }
 

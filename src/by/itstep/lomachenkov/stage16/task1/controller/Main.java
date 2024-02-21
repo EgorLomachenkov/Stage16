@@ -27,7 +27,7 @@ public class Main {
 
         int sum = MatrixLogic.getElementsSum(matrix);
 
-        Printer.print(MatrixUI.format(matrix));
+        Printer.print(MatrixUI.toString(matrix));
 
         Printer.print(ResultUI.format(sum));
 

@@ -1,7 +1,7 @@
-package by.itstep.lomachenkov.stage16.task2.controller;
+package by.itstep.lomachenkov.stage16.task3.controller;
 
-import by.itstep.lomachenkov.stage16.task2.model.MatrixLogic;
-import by.itstep.lomachenkov.stage16.task2.util.ResultUI;
+import by.itstep.lomachenkov.stage16.task3.model.MatrixLogic;
+import by.itstep.lomachenkov.stage16.task3.util.ResultUI;
 import by.itstep.lomachenkov.stage16.util.Input;
 import by.itstep.lomachenkov.stage16.util.MatrixGenerator;
 import by.itstep.lomachenkov.stage16.util.MatrixUI;
@@ -9,8 +9,8 @@ import by.itstep.lomachenkov.stage16.view.Printer;
 
 public class Main {
     public static void main(String[] args) {
-        Printer.print("This program displays the column numbers, " +
-                "which elements form monotonic sequence\n");
+        Printer.print("This program displays the greatest element in the rows," +
+                " that elements form a sequence.\n");
 
         int rows;
         int columns;
@@ -23,12 +23,12 @@ public class Main {
 
         int[][] matrix = MatrixGenerator.createMatrix(rows, columns);
 
-        MatrixGenerator.initMatrix(matrix);
+        MatrixGenerator.initMatrixByUser(matrix);
+
+        int max = MatrixLogic.getMaxElement(matrix);
 
         Printer.print(MatrixUI.toString(matrix));
 
-        String msg = MatrixLogic.getColumnNumbersWithSequence(matrix);
-
-        Printer.print(ResultUI.format(msg));
+        Printer.print(ResultUI.format(max));
     }
 }

@@ -1,4 +1,4 @@
-package by.itstep.lomachenkov.stage16.task2.view;
+package by.itstep.lomachenkov.stage16.task2.util;
 
 public class ResultUI {
     public static String format(String msg) {
