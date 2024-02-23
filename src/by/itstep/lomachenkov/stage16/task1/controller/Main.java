@@ -1,7 +1,7 @@
 package by.itstep.lomachenkov.stage16.task1.controller;
 
 import by.itstep.lomachenkov.stage16.task1.model.MatrixLogic;
-import by.itstep.lomachenkov.stage16.task1.util.ResultUI;
+import by.itstep.lomachenkov.stage16.util.ResultUI;
 import by.itstep.lomachenkov.stage16.util.Input;
 import by.itstep.lomachenkov.stage16.util.MatrixGenerator;
 import by.itstep.lomachenkov.stage16.util.MatrixUI;
@@ -29,7 +29,7 @@ public class Main {
 
         Printer.print(MatrixUI.toString(matrix));
 
-        Printer.print(ResultUI.format(sum));
+        Printer.print(ResultUI.formatSum(sum));
 
     }
 }

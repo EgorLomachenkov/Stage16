@@ -1,7 +1,7 @@
 package by.itstep.lomachenkov.stage16.task2.controller;
 
 import by.itstep.lomachenkov.stage16.task2.model.MatrixLogic;
-import by.itstep.lomachenkov.stage16.task2.util.ResultUI;
+import by.itstep.lomachenkov.stage16.util.ResultUI;
 import by.itstep.lomachenkov.stage16.util.Input;
 import by.itstep.lomachenkov.stage16.util.MatrixGenerator;
 import by.itstep.lomachenkov.stage16.util.MatrixUI;
@@ -29,6 +29,6 @@ public class Main {
 
         String msg = MatrixLogic.getColumnNumbersWithSequence(matrix);
 
-        Printer.print(ResultUI.format(msg));
+        Printer.print(ResultUI.formatColumns(msg));
     }
 }
