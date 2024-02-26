@@ -1,6 +1,7 @@
 package by.itstep.lomachenkov.stage16.task4.model;
 
 public class MatrixLogic {
+    //O(N * M)
     public static int getRowWithGreatestSeqNumber(int[][] matrix) {
         int rowNumber = 0;
         int maxSequence = 0;
@@ -16,6 +17,7 @@ public class MatrixLogic {
 
         return rowNumber;
     }
+    //O(N)
 
     private static int countEqualElements(int[] row) {
         int count = 1;

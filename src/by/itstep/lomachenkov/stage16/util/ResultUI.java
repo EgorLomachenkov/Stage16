@@ -20,4 +20,8 @@ public class ResultUI {
     public static String formatRows(int rowNumber) {
         return String.format("The row number: %d", rowNumber);
     }
+
+    public static String formatElements(int maxAmount) {
+        return String.format("The max increasing elements amount: %d", maxAmount);
+    }
 }
