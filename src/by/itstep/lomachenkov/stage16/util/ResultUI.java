@@ -24,4 +24,8 @@ public class ResultUI {
     public static String formatElements(int maxAmount) {
         return String.format("The max increasing elements amount: %d", maxAmount);
     }
+
+    public static String formatTest(boolean test) {
+        return test ? "The algorithm works properly" : "The algorithm works incorrect";
+    }
 }
