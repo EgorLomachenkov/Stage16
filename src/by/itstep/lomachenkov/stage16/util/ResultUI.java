@@ -28,4 +28,8 @@ public class ResultUI {
     public static String formatTest(boolean test) {
         return test ? "The algorithm works properly" : "The algorithm works incorrect";
     }
+
+    public static String formatTriangle(String result) {
+        return String.format("The matrix type: %s", result);
+    }
 }

@@ -33,6 +33,10 @@ public class MatrixGenerator {
         return new int[rows][columns];
     }
 
+    public static int[][] createMatrix(int size) {
+        return new int[size][size];
+    }
+
     public static int[] createVector(int size) {
         return new int[size];
     }
