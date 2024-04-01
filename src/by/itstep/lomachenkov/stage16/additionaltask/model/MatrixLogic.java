@@ -7,12 +7,11 @@ public class MatrixLogic {
 
         String str = "neither upper nor lower";
 
-        if (isLower && isUpper) {
+        if (isLower && isUpper || (!isLower && !isUpper)) {
             return str;
         }
 
-        str = isUpper ? "upper" : str;
-        str = isLower ? "lower" : str;
+        str = isUpper ? "upper" : "lower";
 
         return str;
     }

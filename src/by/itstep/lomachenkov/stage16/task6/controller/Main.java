@@ -27,6 +27,9 @@ public class Main {
         MatrixGenerator.initVector(firstVector);
         MatrixGenerator.initVector(secondVector);
 
+        Arrays.sort(firstVector);
+        Arrays.sort(secondVector);
+
         int[] vector = VectorLogic.getNewVector(firstVector, secondVector);
 
         boolean test = VectorLogic.isIncreaseTest(vector);

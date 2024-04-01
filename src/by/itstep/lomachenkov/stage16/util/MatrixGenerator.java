@@ -1,6 +1,5 @@
 package by.itstep.lomachenkov.stage16.util;
 
-import java.util.Arrays;
 import java.util.Random;
 
 public class MatrixGenerator {
@@ -23,8 +22,6 @@ public class MatrixGenerator {
             vector[i] = RND.nextInt(-100000, 100000);
 
         }
-
-        Arrays.sort(vector);
     }
 
 
